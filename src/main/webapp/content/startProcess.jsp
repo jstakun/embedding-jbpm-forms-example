@@ -1,7 +1,7 @@
 <script type="text/javascript">
     if (!window.jBPMFormAPI) window.jBPMFormAPI = new jBPMFormsAPI();
 
-    var hostURL = "http://localhost:8080/kie-wb";
+    var hostURL = "http://localhost:8080/business-central/";
 
     var processes = new Object();
 
@@ -9,9 +9,9 @@
         deploymentId: "org.jbpm:HR:1.0",
         processId: "hiring"
     };
-    processes["human-resources"] = {
-        deploymentId: "org.jbpm:human-resources:1.0",
-        processId: "hiring"
+    processes["Policy Quote"] = {
+        deploymentId: "org.acme.insurance:policyquote:1.0.4",
+        processId: "policyquote.policyquoteprocess"
     };
 
     function onsuccessShowForm(response) {
