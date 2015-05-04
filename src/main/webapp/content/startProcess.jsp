@@ -5,15 +5,15 @@
 
     var processes = new Object();
 
-    processes["HR"] = {
-        deploymentId: "org.jbpm:HR:1.0",
-        processId: "hiring"
-    };
     processes["Policy Quote"] = {
         deploymentId: "org.acme.insurance:policyquote:1.0.4",
         processId: "policyquote.policyquoteprocess"
     };
-
+    processes["HR"] = {
+            deploymentId: "org.jbpm:HR:1.0",
+            processId: "hiring"
+    };
+        
     function onsuccessShowForm(response) {
         $("#startProcessDiv").show();
         $("#startProcessAction").show();
@@ -68,8 +68,8 @@
 <div>
     <form class="navbar-form pull-left">
         <select name="process" id="process">
-            <option value="HR" selected>HR</option>
-            <option value="human-resources" selected>Human Resources</option>
+            <option value="Policy Quote" selected>Policy Quote</option>
+            <option value="HR">HR</option>
         </select>
         <input type="button" class="btn" value="Show Start Form" onclick="showStartProcessForm()">
     </form>

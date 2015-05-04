@@ -1,12 +1,12 @@
 <script type="text/javascript">
     if (!window.jBPMFormAPI) window.jBPMFormAPI = new jBPMFormsAPI();
-    var hostURL = "http://localhost:8080/kie-wb";
+    var hostURL = "http://localhost:8080/business-central/";
     var tasks;
     var currentTask;
     function loadTaskList() {
         $.ajax({
                 type: "GET",
-                url: "http://localhost:8080/kie-wb/rest/task/query?potentialOwner=katy",
+                url: "http://localhost:8080/business-central/rest/task/query?potentialOwner=katy",
                 dataType: "xml",
                 beforeSend: function () {
                     $("#listcontainer").html('<img src="img/loading.gif" border="0">');
