@@ -6,7 +6,7 @@
     function loadTaskList() {
         $.ajax({
                 type: "GET",
-                url: "http://localhost:8080/business-central/rest/task/query?potentialOwner=katy",
+                url: "http://localhost:8080/business-central/rest/task/query?potentialOwner=<%= request.getRemoteUser()%>",
                 dataType: "xml",
                 beforeSend: function () {
                     $("#listcontainer").html('<img src="img/loading.gif" border="0">');
@@ -180,11 +180,11 @@
     </div>
     <div class="span12 centered-text">
         <div class="row">
-            <div id="formcontainer" class="col-md-12" style="display: none; max-height: 400px; max-width: 400px;"></div>
+            <div id="formcontainer" class="col-md-12" style="display: none; max-height: 500px; max-width: 400px; margin-left: 30px;"></div>
         </div>
 
         <div class="row">
-            <div id="taskactions" class="col-md-12" style="display: none;">
+            <div id="taskactions" class="col-md-12" style="display: none; margin-left: 30px">
                 <button type="button" class="btn btn-default" id="claim" onclick="claimTask()">Claim task</button>
                 <button type="button" class="btn btn-default" id="release" onclick="releaseTask()">Release task</button>
                 <button type="button" class="btn btn-default" id="start" onclick="startTask()">Start task</button>

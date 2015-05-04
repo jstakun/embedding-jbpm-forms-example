@@ -73,8 +73,8 @@
         </select>
         <input type="button" class="btn" value="Show Start Form" onclick="showStartProcessForm()">
     </form>
-    <div id="startProcessDiv" style="display: none; max-height: 400px; max-width: 400px;"></div>
-    <div id="startProcessAction" style="display: none;">
+    <div id="startProcessDiv" style="display: none; max-height: 450px; max-width: 400px; margin-left: 10px;"></div>
+    <div id="startProcessAction" style="display: none; margin-left: 10px;">
         <input type="button" class="btn" value="Start Process" onclick="startProcess()">
     </div>
 </div>

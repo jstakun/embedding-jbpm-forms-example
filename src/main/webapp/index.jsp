@@ -3,10 +3,10 @@
 <html>
 <head>
     <title>Embedding forms :: index</title>
-    <link href="bootstrap/css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <link href="bootstrap/css/bootstrap.css" rel="stylesheet" media="screen">
 
     <script src="http://code.jquery.com/jquery.js"></script>
-    <script src="bootstrap/js/bootstrap.min.js"></script>
+    <script src="bootstrap/js/bootstrap.js"></script>
     <script type="text/javascript" src="js/jbpm-forms-rest-integration.js"></script>
     <script type="text/javascript">
         $(function() {
