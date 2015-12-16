@@ -32,6 +32,8 @@
         if (StringUtils.isEmpty(login)) {
             response.sendRedirect("login.jsp");
         } else {
+        	System.out.println(login + " is in role admin: " + request.isUserInRole("admin"));
+        	System.out.println(login + " is in role user: " + request.isUserInRole("user"));
     %>
     <div class="nav pull-right">
         <p class="navbar-text" style="padding-right: 20px;"><b>Hi <%=login%> (<a href="logout.jsp" class="navbar-link">logout</a>)</b></p>
